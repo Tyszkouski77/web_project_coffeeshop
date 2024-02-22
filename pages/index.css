@@ -2,11 +2,8 @@
   min-width: 1100px;
   max-width: 1600px;
   font-family: "Inter", "Arial", sans-serif;
+  font-family: "Noto Serif", "Times New Roman", Times, serif;
   font-size: 16px;
   line-height: 20px;
 }
 
-* {
- font-family: "Noto Serif", "Times New Roman", Times, serif;
-}
-@import url( 'https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&family=Noto+Serif:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&display=swap')
