@@ -112,65 +112,71 @@
         </section>
         <section class="reservation" id="reservation">
           <h3 class="reservation__title">Reservar uma mesa</h3>
-          <div class="form__container">
-            <form class="form">
-              <fieldset class="form__fieldset">
-                <div class="form__card">
-                  <label for="name" class="form__label">Nome *</label>
-                  <input
-                    type="text"
-                    class="form__input"
-                    id="name"
-                    placeholder="Nome"
-                    required
-                  />
-                </div>
-                <div class="form__card">
-                  <label for="number" class="form__label"
-                    >Numero de convidados *</label
-                  >
-                  <input
-                    type="number"
-                    class="form__input"
-                    id="number"
-                    min="1"
-                    max="8"
-                    placeholder="1-8"
-                    required
-                  />
-                </div>
-                <div class="form__card">
-                  <label for="date" class="form__label">Data e hora *</label>
-                  <input type="date" class="form__input" id="date" required />
+          <form class="form reservation__form">
+            <fieldset class="form__fieldset">
+              <label class="form__label" for="name">Nome *</label>
+              <input
+                type="text"
+                class="form__input"
+                id="name"
+                placeholder="Nome"
+                required
+              />
 
-                  <label for="email" class="form__label">Seu e-mail *</label>
-                  <input
-                    type="email"
-                    class="form__input"
-                    id="email"
-                    placeholder="email@email.com"
-                    required
-                  />
-                </div>
+              <label class="form__label" for="guests"
+                >Numero de convidados *</label
+              >
+              <input
+                type="number"
+                min="1"
+                max="8"
+                class="form__input"
+                id="guests"
+                name="guests"
+                placeholder="1-8"
+                required
+              />
 
-                <button type="button" class="form__button">
-                  Reservar uma mesa
-                </button>
-                <div class="form__checkbox">
-                  <label for="checkbox" class="form__label_direction_right"
-                    >Eu concordo com os termos de uso
-                  </label>
+              <label class="form__label" for="date">Data e hora *</label>
+              <input
+                type="datetime-local"
+                class="form__input"
+                id="date"
+                required
+              />
 
-                  <input
-                    type="checkbox"
-                    class="form__input-checkbox"
-                    id="checkbox"
-                    required
-                  />
-                </div>
-              </fieldset>
-            </form>
-          </div>
+              <label for="email" class="form__label">Seu e-mail *</label>
+              <input
+                type="email"
+                class="form__input"
+                id="email"
+                placeholder="email@email.com"
+                required
+              />
+            </fieldset>
+
+            <button type="button" class="form__button">
+              Reservar uma mesa
+            </button>
+
+            <label
+              for="terms_of_use"
+              class="form__label form__label_direction_right"
+            >
+              <input
+                type="checkbox"
+                class="form__checkbox"
+                name="terms_of_use"
+                value="agree"
+                id="terms_of_use"
+                required
+              />
+              <span class="form__pseudo-item"></span>
+              <span class="form__label-text"
+                >Eu concordo com os termos de uso</span
+              >
+            </label>
+          </form>
         </section>
         <section class="menu" id="menu"></section>
         <section class="about" id="about"></section>
