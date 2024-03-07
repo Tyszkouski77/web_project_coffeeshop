@@ -321,5 +321,3 @@
 .form__checkbox:focus + .form__pseudo-item {
   border: solid 2px black;
 }
-.form__label-text {
-}
