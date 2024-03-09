@@ -33,3 +33,7 @@
   color: #000000;
   font-weight: bold;
 }
+
+.nav__link:hover {
+  color: #2f80ed;
+}
