@@ -39,38 +39,3 @@
   max-width: 1180px;
   padding: 100px 0 100px;
 }
-
-.card {
-  width: 540px;
-  display: flex;
-  flex-direction: column;
-  align-self: baseline;
-}
-
-.card__title {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 30px;
-  margin: 0 0 32px 0;
-}
-
-.card__content {
-  padding: 0;
-}
-
-.card__list-item {
-  font-family: "Noto Serif";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  display: flex;
-  margin: 0;
-}
-
-.card__list-divider {
-  border-bottom: 1px solid #838383;
-  flex-grow: 1;
-}
